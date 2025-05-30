@@ -1,0 +1,33 @@
+<mvc:View
+    controllerName="peotile.controller.Tile"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:microchart="sap.suite.ui.microchart"
+    xmlns="sap.m"
+>
+    <GenericTile
+        header="PEO System Health"
+        sizeBehavior="Responsive"
+        press="onPress"
+        subheader="Description"
+        frameType="OneByOne"
+    >
+        <TileContent>
+            <microchart:HarveyBallMicroChart
+                total="100"
+                showFractions="false"
+                showTotal="false"
+                size="Responsive"
+                alignContent="Left"
+            >
+                <microchart:items>
+                    <microchart:HarveyBallMicroChartItem
+                        fraction="100"
+                        formattedLabel="true"
+                        color="Good"
+                    />
+                </microchart:items>
+            </microchart:HarveyBallMicroChart>
+        </TileContent>
+    </GenericTile>
+</mvc:View>
