@@ -3,8 +3,8 @@
   "authenticationMethod": "route",
   "routes": [
     {
-      "source": "^undefined/(.*)$",
-      "target": "undefined/$1",
+      "source": "^/Metrics/(.*)$",
+      "target": "$1",
       "destination": "ALM-Metrics-Service",
       "authenticationType": "xsuaa",
       "csrfProtection": false

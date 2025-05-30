@@ -5,15 +5,15 @@
     xmlns:microchart="sap.suite.ui.microchart"
     xmlns="sap.m"
 >
-    <GenericTile
-        header="PEO System Health"
+    <GenericTile id="idTileMetricHealty"
+        header="{i18n>genericTile-title}"
         sizeBehavior="Responsive"
         press="onPress"
-        subheader="Description"
         frameType="OneByOne"
     >
-        <TileContent>
+        <TileContent id="idTileContent">
             <microchart:HarveyBallMicroChart
+                id="idTileHarveyBallMicroChart"
                 total="100"
                 showFractions="false"
                 showTotal="false"
@@ -22,6 +22,7 @@
             >
                 <microchart:items>
                     <microchart:HarveyBallMicroChartItem
+                        id="idTileHarveyBallMicroChartItem"
                         fraction="100"
                         formattedLabel="true"
                         color="Good"
