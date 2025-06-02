@@ -20,7 +20,8 @@ sap.ui.define([
             let oResponse,sHeartbeatDate,iMetric;
             const sAppId = this.getOwnerComponent().getManifestEntry("/sap.app/id");
             const sPath = jQuery.sap.getModulePath(sAppId);
-            const sUrl = sPath + "/Metrics/calm-metrics/v1/metrics?version=V1&provider=hm&dimensions=metricName&resolution=5Mi&metrics=measure:value&serviceId=f4f201f5-e0ca-4aaa-a4c1-68eca019935c&format=protobuf-json&metricId=7a50c214-260c-30d5-8fe1-f60f9c5bac32"
+            // const sUrl = sPath + "/Metrics/calm-metrics/v1/metrics?version=V1&provider=hm&dimensions=metricName&resolution=5Mi&metrics=measure:value&serviceId=f4f201f5-e0ca-4aaa-a4c1-68eca019935c&format=protobuf-json&metricId=7a50c214-260c-30d5-8fe1-f60f9c5bac32"
+            const sUrl = sPath + "/Metrics/calm-metrics/v1/metrics?version=V1&provider=hm&dimensions=metricName&resolution=5Mi&metrics=measure:value&serviceId=fa4b4022-eb68-4a91-adb6-5d644309a7cc&format=protobuf-json&metricId=7a50c214-260c-30d5-8fe1-f60f9c5bac32"
 
             try {
 
