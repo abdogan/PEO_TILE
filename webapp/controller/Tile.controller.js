@@ -40,8 +40,10 @@ sap.ui.define([
 
             if (iMetric === 0) {
                 oHarveyBallMicroChartItem.setColor("Good");
+                oGenericTile.setHeader("DEO - available");
             } else {
                 oHarveyBallMicroChartItem.setColor("Error");
+                oGenericTile.setHeader("DEO - unavailable");
             }
 
         },

@@ -6,7 +6,6 @@
     xmlns="sap.m"
 >
     <GenericTile id="idTileMetricHealty"
-        header="{i18n>genericTile-title}"
         sizeBehavior="Responsive"
         press="onPress"
         frameType="OneByOne"
